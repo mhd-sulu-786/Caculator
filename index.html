@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.css">
+    <title>Caculator</title>
+</head>
+<body>
+    <div class="card border bg-dark border-2 border-primary p-2">
+        <div class="label mb-3  mt-3 ms-3  h-60 ">
+            <input type="text" for=""id="display" class=" border bg-info h-50 text-3 border border-danger border-3 " placeholder="Caculator">
+        </div>
+        <div class="container">
+            <div class="row">
+                <button class="col-5 btn bg-warning m-2" onclick="clean()">Clear</button>
+                <button class="col-2 btn bg-primary m-2   " onclick="cliked_opretor('%')">%</button>
+            </div>
+            <div class="row">
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value('7')">7</button>
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(8)">8</button>
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(9)">9</button>
+                <button class="col-2 btn bg-primary m-2" onclick="cliked_opretor('*')">X</button>
+            </div>
+            <div class="row">
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(4)">4</button>
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(5)">5</button>
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(6)">6</button>
+                <button class="col-2 btn bg-primary m-2" onclick="cliked_opretor('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(1)">1</button>
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(2)">2</button>
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(3)">3</button>
+                <button class="col-2 btn bg-primary m-2" onclick="cliked_opretor('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="col-2 btn bg-secondary m-2"onclick="cliked_value(0)">0</button>
+                <button class="col-2 btn bg-primary m-2"onclick="cliked_opretor('.')">.</button>
+                <button class="col-2 btn bg-primary m-2"onclick=" submit()">=</button>
+                <button class="col-2 btn bg-primary m-2"onclick="cliked_opretor('/')">/</button>
+            </div>
+        </div>
+    </div>
+    <script src="boostrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
